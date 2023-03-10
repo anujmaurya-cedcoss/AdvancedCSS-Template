@@ -1,0 +1,126 @@
+/* CSS for header */
+.header {
+    padding : 0px 20px 10px 20px;
+}
+.header__nav {
+    display: flex;
+    padding-bottom: 20px;
+}
+.header__nave-name{
+    font-weight: 900;
+    float : left;
+    width : 70%;
+    padding-top: 15px;
+}
+.header__nav-list > ul {
+    display: flex;
+
+    float : right;
+    justify-content: right;
+}
+.header__nav-list > ul > li{
+    list-style-type: none;
+    padding-left : 20px;
+}
+.header__banner {
+    background-color: #eeeeee;
+    padding: 30px 10px 30px 10px;
+}
+.header__banner-text {
+    width: 30%;
+}
+
+
+/* CSS for main section */
+.content {
+    padding-top : 20px;
+    display : flex;
+    width: 100%;
+}
+.content__item {
+    padding : 0px 25px;
+}
+.content__item-logo {
+    height: 200px;
+    background-color: #eeeeee;
+}
+.content__item-heading > h3{
+    text-align: center;
+}
+.content__item-text {
+    padding : 0px 015px;
+    text-align: justify;
+}
+.content__item-text-link {
+    text-align: center;
+}
+.content__item-text-link a {
+    color : black;
+}
+
+
+/* CSS for footer */
+.footer {
+    padding : 20px;
+}
+.footer__subscribe {
+    background-color: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__subscribe-text {
+    padding-right : 30px;
+}
+label {
+    margin-left: 15%;
+}
+#Subscribe {
+    margin-top : 15px;
+    height : 20px;
+    width: 30%;
+}
+#submit {
+    margin-top : 15px;
+    height : 26px;
+    width: 130%;
+    color : white;
+    background-color : #288acf;
+    border: none;
+}
+.footer__subscribe-button{
+    padding : 0px 10px;
+}
+
+.footer__end {
+    display: flex;
+}
+.footer__end-copyright {
+    width: 80%;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+
+    .content {
+        flex-direction: column;
+    }
+    .content__item-text {
+        padding-bottom: 20px;
+    }
+    .header__nav-list ul {
+        flex-direction: column;
+    }
+    .footer__subscribe {
+        flex-direction: column;
+    }
+    #Subscribe {
+        margin-left: 35%;
+    }
+    #submit {
+        width: 20%;
+        margin-left: 40%;
+    }
+    .footer__subscribe-text {
+        margin-left : 30%;
+    }
+}
